@@ -6,7 +6,7 @@ const Header = () => {
     <div className="flex flex-col items-center gap-6">
       <img src={profilepic} className="w-20 h-20 rounded-full" />
       <p id="twitter" className="font-bold">
-        Mercy Avwenagbiku
+        MercyOvo
       </p>
       <p id="slack" className="hidden">
        Mercy Avwenagbiku
