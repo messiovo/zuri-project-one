@@ -1,1 +1,1 @@
-# zuri-project-one
+# zuri-internship-stage-one-project
