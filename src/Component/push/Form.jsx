@@ -11,6 +11,8 @@ const Form = () => {
     event.preventDefault();
     setFirstName("");
     setLastName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
