@@ -1,6 +1,12 @@
 import React from "react";
+import { useState } from "react";
 
 const Form = () => {
+    const [first_name, setFirstName] = useState("");
+    const [last_name, setLastName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
   return (
     <form action="">
       <div className="flex flex-col lg:flex-row gap-4 justify-center items-center mb-4">
@@ -9,6 +15,8 @@ const Form = () => {
             htmlFor="first name"
             id="first_name"
             className=" text-sm text-medium font-medium"
+            value={first_name}
+            onChange={(e) => setFirstName(e.target.value)}
           >
             First name
           </label>
