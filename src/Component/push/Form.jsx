@@ -2,10 +2,16 @@ import React from "react";
 import { useState } from "react";
 
 const Form = () => {
-    const [first_name, setFirstName] = useState("");
-    const [last_name, setLastName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
+  const [first_name, setFirstName] = useState("");
+  const [last_name, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setFirstName("");
+    setLastName("");
+  }
 
   return (
     <form action="">
@@ -15,8 +21,6 @@ const Form = () => {
             htmlFor="first name"
             id="first_name"
             className=" text-sm text-medium font-medium"
-            value={first_name}
-            onChange={(e) => setFirstName(e.target.value)}
           >
             First name
           </label>
@@ -24,6 +28,8 @@ const Form = () => {
             type="text"
             className="w-full h-10 px-4 outline-none text-base font-normal border-[1px] shadow-sm rounded-lg "
             placeholder="Enter your first name"
+            value={first_name}
+            onChange={(e) => setFirstName(e.target.value)}
           />
         </span>
         <span className="flex flex-col lg:w-2/4 w-full">
@@ -38,6 +44,8 @@ const Form = () => {
             type="text"
             className="w-full h-10 px-4 border-[1px] rounded-lg shadow-sm outline-none  text-light text-base font-normal  "
             placeholder="Enter your last name"
+            value={last_name}
+            onChange={(e) => setLastName(e.target.value)}
           />
         </span>
       </div>
@@ -53,6 +61,8 @@ const Form = () => {
           type="text"
           className="w-full h-10 px-4 outline-none text-base font-normal border-[1px] shadow-sm rounded-lg "
           placeholder="yourname@email.com"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
       </div>
       <div className="flex flex-col w-full mb-4">
@@ -64,6 +74,8 @@ const Form = () => {
           rows="4"
           className="resize-none outline-none  text-base py-4 font-normal px-4 border-[1px] shadow-sm rounded-lg"
           placeholder="Send me a message and I'll reply you as soon as possible... "
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
         ></textarea>
       </div>
       <div className="flex gap-2">
