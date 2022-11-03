@@ -89,7 +89,7 @@ const Form = () => {
           checked={checked}
           onChange={(e) => setChecked(e.target.checked)}
         />
-        <label htmlFor="" className="text-base text-medium ">
+        <label htmlFor="checkbox-text" className="text-base text-medium ">
           You agree to providing your data to {name} who may contact you.
         </label>
       </div>
