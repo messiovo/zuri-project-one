@@ -15,7 +15,7 @@ const Form = () => {
     setEmail("");
     setMessage("");
     setChecked(!checked)
-    
+
   };
 
   return (
@@ -23,7 +23,7 @@ const Form = () => {
       <div className="flex flex-col lg:flex-row gap-4 justify-center items-center mb-4">
         <span className="flex flex-col lg:w-2/4 w-full">
           <label
-            htmlFor="first name"
+            htmlFor="first_name"
             id="first_name"
             className=" text-sm text-medium font-medium"
           >
@@ -39,7 +39,7 @@ const Form = () => {
         </span>
         <span className="flex flex-col lg:w-2/4 w-full">
           <label
-            htmlFor="last name"
+            htmlFor="last_name"
             id="last_name"
             className=" text-sm font-medium text-medium"
           >
@@ -83,7 +83,7 @@ const Form = () => {
           onChange={(e) => setMessage(e.target.value)}
         ></textarea>
       </div>
-      <div className="flex gap-2">
+      <div className="flex items-start lg:items-center gap-2">
         <input
           type="checkbox"
           className="required:border-[#D0D5DD] required:rounded-xl outline-none"
