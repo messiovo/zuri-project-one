@@ -61,7 +61,7 @@ const Form = () => {
       <div className="flex gap-2">
         <input
           type="checkbox"
-          className="required:border-[#D0D5DD] required:rounded-xl"
+          className="required:border-[#D0D5DD] required:rounded-xl outline-none"
         />
         <label htmlFor="" className="text-base text-medium">
           You agree to providing your data to who may contact you.
