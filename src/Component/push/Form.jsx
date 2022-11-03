@@ -11,10 +11,10 @@ const Form = () => {
     event.preventDefault();
     setFirstName("");
     setLastName("");
-  }
+  };
 
   return (
-    <form action="">
+    <form onSubmit={handleSubmit}>
       <div className="flex flex-col lg:flex-row gap-4 justify-center items-center mb-4">
         <span className="flex flex-col lg:w-2/4 w-full">
           <label
