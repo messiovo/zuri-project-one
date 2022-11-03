@@ -14,8 +14,7 @@ const Form = () => {
     setLastName("");
     setEmail("");
     setMessage("");
-    setChecked(!checked)
-
+    setChecked(!checked);
   };
 
   return (
@@ -83,14 +82,14 @@ const Form = () => {
           onChange={(e) => setMessage(e.target.value)}
         ></textarea>
       </div>
-      <div className="flex items-start lg:items-center gap-2">
+      <div className="flex items-center gap-3">
         <input
           type="checkbox"
-          className="required:border-[#D0D5DD] required:rounded-xl outline-none"
+          className="required:border-[#D0D5DD] required:rounded-xl outline-none "
           checked={checked}
           onChange={(e) => setChecked(e.target.checked)}
         />
-        <label htmlFor="" className="text-base text-medium">
+        <label htmlFor="" className="text-base text-medium ">
           You agree to providing your data to who may contact you.
         </label>
       </div>
