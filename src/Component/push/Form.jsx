@@ -7,26 +7,26 @@ const Form = () => {
         <span className="flex flex-col lg:w-2/4 w-full">
           <label
             htmlFor="first name"
-            className=" text-sm font-medium"
+            className=" text-sm text-medium font-medium"
           >
             First name
           </label>
           <input
             type="text"
-            className="w-full h-10 px-4 outline-none text-md font-medium border-[1px] shadow-sm rounded-lg "
+            className="w-full h-10 px-4 outline-none text-base font-normal border-[1px] shadow-sm rounded-lg "
             placeholder="Enter your first name"
           />
         </span>
         <span className="flex flex-col lg:w-2/4 w-full">
           <label
             htmlFor="last name"
-            className=" text-md font-medium"
+            className=" text-sm font-medium text-medium"
           >
             Last name
           </label>
           <input
             type="text"
-            className="w-full h-10 px-4 border-[1px] rounded-lg shadow-sm outline-none  text-light text-md font-medium  "
+            className="w-full h-10 px-4 border-[1px] rounded-lg shadow-sm outline-none  text-light text-base font-normal  "
             placeholder="Enter your last name"
           />
         </span>
@@ -34,20 +34,20 @@ const Form = () => {
       <div className="flex flex-col w-full mb-4">
         <label
           htmlFor="Email"
-          className=" text-md font-medium"
+          className=" text-sm font-medium text-medium"
         >
           Email
         </label>
         <input
           type="text"
-          className="w-full h-10 px-4 outline-none text-md font-medium border-[1px] shadow-sm rounded-lg "
+          className="w-full h-10 px-4 outline-none text-base font-normal border-[1px] shadow-sm rounded-lg "
           placeholder="yourname@email.com"
         />
       </div>
       <div className="flex flex-col w-full ">
         <label
           htmlFor="Message"
-          className="text-md font-medium"
+          className="text-sm text-medium font-medium"
         >
           Message
         </label>
@@ -55,7 +55,7 @@ const Form = () => {
           name=""
           id=""
           rows="4"
-          className="outline-none  text-sm lg:text-md py-4 font-medium px-4 border-[1px] shadow-sm rounded-lg"
+          className="outline-none  text-base py-4 font-normal px-4 border-[1px] shadow-sm rounded-lg"
           placeholder="Send me a message and I'll reply you as soon as possible... "
         ></textarea>
       </div>
