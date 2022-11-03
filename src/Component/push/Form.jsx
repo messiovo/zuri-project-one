@@ -6,6 +6,7 @@ const Form = () => {
   const [last_name, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [checked, setChecked] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -13,6 +14,8 @@ const Form = () => {
     setLastName("");
     setEmail("");
     setMessage("");
+    setChecked(!checked)
+    
   };
 
   return (
@@ -84,6 +87,8 @@ const Form = () => {
         <input
           type="checkbox"
           className="required:border-[#D0D5DD] required:rounded-xl outline-none"
+          checked={checked}
+          onChange={(e) => setChecked(e.target.checked)}
         />
         <label htmlFor="" className="text-base text-medium">
           You agree to providing your data to who may contact you.
