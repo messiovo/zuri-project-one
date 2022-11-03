@@ -54,7 +54,7 @@ const Form = () => {
         <textarea
           id="message"
           rows="4"
-          className="outline-none  text-base py-4 font-normal px-4 border-[1px] shadow-sm rounded-lg"
+          className="resize-none outline-none  text-base py-4 font-normal px-4 border-[1px] shadow-sm rounded-lg"
           placeholder="Send me a message and I'll reply you as soon as possible... "
         ></textarea>
       </div>
