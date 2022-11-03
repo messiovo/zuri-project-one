@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer, Header, Link, SocialIcon } from "../Component";
+import {  Header, Link, SocialIcon } from "../Component";
 
 const Home = () => {
   return (
@@ -7,7 +7,7 @@ const Home = () => {
       <Header />
       <Link />
       <SocialIcon/>
-      <Footer/>
+
     </>
   );
 };
