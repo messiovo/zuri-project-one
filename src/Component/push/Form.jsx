@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 const Form = () => {
+const name = "Mercy Avwenagbiku"
   const [first_name, setFirstName] = useState("");
   const [last_name, setLastName] = useState("");
   const [email, setEmail] = useState("");
