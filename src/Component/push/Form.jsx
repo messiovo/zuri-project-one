@@ -16,13 +16,11 @@ const Form = () => {
     setEmail("");
     setMessage("");
     setChecked(!checked);
-
   };
 
   return (
-    <form onSubmit={handleSubmit}
-    className="w-full flex flex-col gap-6">
-      <div className="flex flex-col lg:flex-row gap-4 justify-center items-center mb-4">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full">
+      <div className="flex flex-col lg:flex-row gap-4 justify-center items-center">
         <span className="flex flex-col lg:w-2/4 w-full">
           <label
             htmlFor="first_name"
@@ -58,7 +56,7 @@ const Form = () => {
           />
         </span>
       </div>
-      <div className="flex flex-col w-full mb-4">
+      <div className="flex flex-col w-full">
         <label
           htmlFor="Email"
           id="email"
@@ -75,7 +73,7 @@ const Form = () => {
           required
         />
       </div>
-      <div className="flex flex-col w-full mb-4">
+      <div className="flex flex-col w-full">
         <label htmlFor="Message" className="text-sm text-medium font-medium">
           Message
         </label>
@@ -104,7 +102,9 @@ const Form = () => {
       <button
         id="btn__submit"
         disabled={!checked}
-        className={"border-[1px] w-full mt-4 py-2 bg-[#1570EF] text-white rounded-lg shadow-sm"}
+        className={
+          "border-[1px] w-full mt-4 py-2 bg-[#1570EF] text-white rounded-lg shadow-sm"
+        }
       >
         Send message
       </button>
