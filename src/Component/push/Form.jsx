@@ -24,13 +24,13 @@ const Form = () => {
         <span className="flex flex-col lg:w-2/4 w-full">
           <label
             htmlFor="first_name"
-            id="first_name"
             className=" text-sm text-medium font-medium"
           >
             First name
           </label>
           <input
             type="text"
+            id="first_name"
             className="w-full h-10 px-4 outline-none text-base font-normal border-[1px] shadow-sm rounded-lg "
             placeholder="Enter your first name"
             value={first_name}
@@ -41,13 +41,13 @@ const Form = () => {
         <span className="flex flex-col lg:w-2/4 w-full">
           <label
             htmlFor="last_name"
-            id="last_name"
             className=" text-sm font-medium text-medium"
           >
             Last name
           </label>
           <input
             type="text"
+            id="last_name"
             className="w-full h-10 px-4 border-[1px] rounded-lg shadow-sm outline-none  text-light text-base font-normal  "
             placeholder="Enter your last name"
             value={last_name}
@@ -59,13 +59,13 @@ const Form = () => {
       <div className="flex flex-col w-full">
         <label
           htmlFor="Email"
-          id="email"
           className=" text-sm font-medium text-medium"
         >
           Email
         </label>
         <input
           type="text"
+          id="email"
           className="w-full h-10 px-4 outline-none text-base font-normal border-[1px] shadow-sm rounded-lg "
           placeholder="yourname@email.com"
           value={email}
