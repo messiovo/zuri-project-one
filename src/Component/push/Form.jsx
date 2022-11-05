@@ -16,11 +16,12 @@ const Form = () => {
     setEmail("");
     setMessage("");
     setChecked(!checked);
-    alert("Successfully sent");
+
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}
+    className="w-full flex flex-col gap-6">
       <div className="flex flex-col lg:flex-row gap-4 justify-center items-center mb-4">
         <span className="flex flex-col lg:w-2/4 w-full">
           <label
@@ -80,28 +81,30 @@ const Form = () => {
         </label>
         <textarea
           id="message"
-          rows="4"
+          rows={4}
+          cols={30}
           className="resize-none outline-none  text-base py-4 font-normal px-4 border-[1px] shadow-sm rounded-lg"
           placeholder="Send me a message and I'll reply you as soon as possible... "
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         ></textarea>
       </div>
-      <div className="flex items-center gap-3">
+      <div className="flex items-start lg:items-center gap-3">
         <input
           type="checkbox"
-          className="required:border-[#D0D5DD] required:rounded-xl outline-none "
+          className="required:border-[#D0D5DD] required:rounded-xl outline-none ring-0 focus:ring-0 focus:outline-none"
           checked={checked}
           onChange={(e) => setChecked(e.target.checked)}
         />
-        <label htmlFor="checkbox-text" className="text-base text-medium ">
+        <label htmlFor="checkbox" className="text-base text-medium ">
           You agree to providing your data to {name} who may contact you.
         </label>
       </div>
 
       <button
         id="btn__submit"
-        className="border-[1px] w-full mt-4 py-2 bg-[#1570EF] text-white rounded-lg shadow-sm"
+        disabled={!checked}
+        className={"border-[1px] w-full mt-4 py-2 bg-[#1570EF] text-white rounded-lg shadow-sm"}
       >
         Send message
       </button>
