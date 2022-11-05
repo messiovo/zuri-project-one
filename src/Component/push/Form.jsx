@@ -87,7 +87,7 @@ const Form = () => {
           onChange={(e) => setMessage(e.target.value)}
         ></textarea>
       </div>
-      <div className="flex items-start lg:items-center gap-3">
+      <div className="flex items-start lg:items-center gap-2">
         <input
           type="checkbox"
           className="required:border-[#D0D5DD] required:rounded-xl outline-none ring-0 focus:ring-0 focus:outline-none"
@@ -101,9 +101,10 @@ const Form = () => {
 
       <button
         id="btn__submit"
+        type="submit"
         disabled={!checked}
         className={
-          "border-[1px] w-full mt-4 py-2 bg-[#1570EF] text-white rounded-lg shadow-sm"
+          "border-[1px] w-full py-2 bg-[#1570EF] text-white rounded-lg shadow-sm"
         }
       >
         Send message
