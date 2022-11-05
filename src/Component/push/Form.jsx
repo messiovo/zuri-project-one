@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 const Form = () => {
-const name = "Mercy Avwenagbiku"
+  const name = "Mercy Avwenagbiku";
   const [first_name, setFirstName] = useState("");
   const [last_name, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -16,6 +16,7 @@ const name = "Mercy Avwenagbiku"
     setEmail("");
     setMessage("");
     setChecked(!checked);
+    alert("Successfully sent");
   };
 
   return (
@@ -35,6 +36,7 @@ const name = "Mercy Avwenagbiku"
             placeholder="Enter your first name"
             value={first_name}
             onChange={(e) => setFirstName(e.target.value)}
+            required
           />
         </span>
         <span className="flex flex-col lg:w-2/4 w-full">
@@ -51,6 +53,7 @@ const name = "Mercy Avwenagbiku"
             placeholder="Enter your last name"
             value={last_name}
             onChange={(e) => setLastName(e.target.value)}
+            required
           />
         </span>
       </div>
@@ -68,6 +71,7 @@ const name = "Mercy Avwenagbiku"
           placeholder="yourname@email.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
       </div>
       <div className="flex flex-col w-full mb-4">
