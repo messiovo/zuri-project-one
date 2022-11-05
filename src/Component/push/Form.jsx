@@ -90,6 +90,7 @@ const Form = () => {
       <div className="flex items-start lg:items-center gap-2">
         <input
           type="checkbox"
+          id="checkbox"
           className="required:border-[#D0D5DD] required:rounded-xl outline-none ring-0 focus:ring-0 focus:outline-none"
           checked={checked}
           onChange={(e) => setChecked(e.target.checked)}
